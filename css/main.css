@@ -510,6 +510,7 @@ nav a:hover {
   }
   .hero .hero_objects {
     position: absolute;
+    outline: none;
   }
   .hero .hero_content {
     margin-right: 3em;
