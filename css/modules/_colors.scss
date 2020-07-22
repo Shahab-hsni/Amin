@@ -1,0 +1,25 @@
+$primary: #366b97;
+$light_p: #ffffff;
+$lighter_p: #fff9ed;
+$dark_p: #1f3e58;
+$accent: #eb3f3f;
+$green: #28a745;
+$gray: rgb(95, 95, 95);
+$light-gray: rgb(214, 208, 196);
+$white: #ffffff;
+$black: #101011;
+$gradiant: linear-gradient(to right, #00355d 25%, #244f7a, #3f6a97, #5a87b6);
+$gradiant-tl: linear-gradient(
+  to right bottom,
+  #00355d,
+  #244f7a,
+  #3f6a97,
+  #5a87b6,
+  #75a5d6
+);
+
+$box-shadow: 0px 10px 30px #3d3639d9;
+$card-img-shadow: 0px 2.7px 3.9px rgba(0, 0, 0, 0.1),
+  0px 4px 6.6px rgba(0, 0, 0, 0.01), -1px 2px 5px rgba(0, 0, 0, 0.25);
+$card-shadow: 0px 3.7px 3.9px rgba(0, 0, 0, 0.1),
+  0px 12px 9.6px rgba(0, 0, 0, 0.01), -4px 6px 17px rgba(0, 0, 0, 0.25);

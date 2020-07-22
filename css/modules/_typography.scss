@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+$ff-s: "Poppins", sans-serif;
+$ff-ss: "Dosis", sans-serif;
+
+$fw-n: 400;
+$fw-m: 500;
+$fw-sb: 600;
+$fw-b: 700;
+
+@mixin sans-serif(
+  $fs: calculateRem($size),
+  $ls: 0,
+  $color: $light-gray,
+  $tt: capitalize,
+  $lh: 1,
+  $ff: $ff-ss
+) {
+  font-size: $fs;
+  letter-spacing: $ls;
+  color: $color;
+  text-transform: $tt;
+  line-height: $lh;
+  font-family: $ff;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+//Usage
+// p {
+//   @include font-size(14px)
+// }
+// //Output
+// p {
+//   font-size: 14px; //For unsupported browsers
+//   font-size: 0.8rem;
+// }
