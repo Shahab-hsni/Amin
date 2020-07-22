@@ -1342,8 +1342,7 @@ main section.gallery .g-items .g11 {
 
 @media screen and (max-width: 768px) {
   .hero svg {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    display: none;
   }
 }
 

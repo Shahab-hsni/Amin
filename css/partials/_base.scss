@@ -930,7 +930,7 @@ main {
     transform: translateX(-45vh);
   }
   @media screen and (max-width: 768px) {
-    transform: translateX(-100%);
+    display: none;
   }
 }
 
