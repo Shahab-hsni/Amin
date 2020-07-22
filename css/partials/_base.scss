@@ -157,8 +157,8 @@ nav a:hover {
 .nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
-  color: black;
   margin-right: 3%;
+  color: black;
 }
 
 .mobile-view {

@@ -275,8 +275,8 @@ nav a:hover {
   opacity: 1;
   -webkit-transition: opacity 250ms ease-in-out 250ms;
   transition: opacity 250ms ease-in-out 250ms;
-  color: black;
   margin-right: 3%;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
