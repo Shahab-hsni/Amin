@@ -59,11 +59,12 @@ header {
   display: flex;
   align-items: center;
   outline: none !important;
+  cursor: pointer;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
+.nav-toggle-label span.white-hamburger,
+.nav-toggle-label span.white-hamburger::before,
+.nav-toggle-label span.white-hamburger::after {
   display: block;
   background: white;
   height: 2px;
@@ -72,17 +73,42 @@ header {
   position: relative;
 }
 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
+.nav-toggle-label span.white-hamburger::before,
+.nav-toggle-label span.white-hamburger::after {
   content: "";
   position: absolute;
 }
 
-.nav-toggle-label span::before {
+.nav-toggle-label span.white-hamburger::before {
   bottom: 7px;
 }
 
-.nav-toggle-label span::after {
+.nav-toggle-label span.white-hamburger::after {
+  top: 7px;
+}
+
+.nav-toggle-label span.black-hamburger,
+.nav-toggle-label span.black-hamburger::before,
+.nav-toggle-label span.black-hamburger::after {
+  display: block;
+  background: black;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span.black-hamburger::before,
+.nav-toggle-label span.black-hamburger::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span.black-hamburger::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span.black-hamburger::after {
   top: 7px;
 }
 
@@ -90,12 +116,13 @@ nav {
   position: absolute;
   text-align: right;
   top: 100%;
-  right: 3%;
+  right: 0;
   background: var(--background);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+  padding: 1em 0 1em 0;
 }
 
 nav ul {
@@ -124,11 +151,14 @@ nav a:hover {
 
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
+  background-color: white;
 }
 
 .nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
+  color: black;
+  margin-right: 3%;
 }
 
 .mobile-view {
@@ -313,6 +343,9 @@ nav a:hover {
       @media screen and (max-width: 768px) {
         @include sans-serif($fs: 8vw, $color: $white);
       }
+      @media screen and (max-width: 600px) {
+        @include sans-serif($fs: 12vw, $color: $white);
+      }
     }
     p {
       @include sans-serif($fs: 2.5vw, $color: $gray);
@@ -324,6 +357,9 @@ nav a:hover {
       }
       @media screen and (max-width: 768px) {
         @include sans-serif($fs: 3vw, $color: $white);
+      }
+      @media screen and (max-width: 600px) {
+        @include sans-serif($fs: 6vw, $color: $light-gray);
       }
     }
 
@@ -347,6 +383,9 @@ nav a:hover {
         &:hover {
           filter: brightness(90%);
         }
+        @media screen and (max-width: 600px) {
+          font-size: 0.9em;
+        }
       }
 
       .btn-secondary {
@@ -365,6 +404,7 @@ nav a:hover {
           color: $light_p;
           margin-left: 0;
           margin-top: 0.5em;
+          font-size: 0.9em;
         }
       }
     }

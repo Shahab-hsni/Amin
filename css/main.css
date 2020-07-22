@@ -163,11 +163,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   outline: none !important;
+  cursor: pointer;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
+.nav-toggle-label span.white-hamburger,
+.nav-toggle-label span.white-hamburger::before,
+.nav-toggle-label span.white-hamburger::after {
   display: block;
   background: white;
   height: 2px;
@@ -176,17 +177,42 @@ header {
   position: relative;
 }
 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
+.nav-toggle-label span.white-hamburger::before,
+.nav-toggle-label span.white-hamburger::after {
   content: "";
   position: absolute;
 }
 
-.nav-toggle-label span::before {
+.nav-toggle-label span.white-hamburger::before {
   bottom: 7px;
 }
 
-.nav-toggle-label span::after {
+.nav-toggle-label span.white-hamburger::after {
+  top: 7px;
+}
+
+.nav-toggle-label span.black-hamburger,
+.nav-toggle-label span.black-hamburger::before,
+.nav-toggle-label span.black-hamburger::after {
+  display: block;
+  background: black;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span.black-hamburger::before,
+.nav-toggle-label span.black-hamburger::after {
+  content: "";
+  position: absolute;
+}
+
+.nav-toggle-label span.black-hamburger::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span.black-hamburger::after {
   top: 7px;
 }
 
@@ -194,7 +220,7 @@ nav {
   position: absolute;
   text-align: right;
   top: 100%;
-  right: 3%;
+  right: 0;
   background: var(--background);
   width: 100%;
   -webkit-transform: scale(1, 0);
@@ -205,6 +231,7 @@ nav {
   transition: -webkit-transform 400ms ease-in-out;
   transition: transform 400ms ease-in-out;
   transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+  padding: 1em 0 1em 0;
 }
 
 nav ul {
@@ -241,12 +268,15 @@ nav a:hover {
 .nav-toggle:checked ~ nav {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+  background-color: white;
 }
 
 .nav-toggle:checked ~ nav a {
   opacity: 1;
   -webkit-transition: opacity 250ms ease-in-out 250ms;
   transition: opacity 250ms ease-in-out 250ms;
+  color: black;
+  margin-right: 3%;
 }
 
 @media screen and (max-width: 768px) {
@@ -553,6 +583,17 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .hero .hero_content h1 {
+    font-size: 12vw;
+    letter-spacing: 0;
+    color: #ffffff;
+    text-transform: capitalize;
+    line-height: 1;
+    font-family: "Dosis", sans-serif;
+  }
+}
+
 .hero .hero_content p {
   font-size: 2.5vw;
   letter-spacing: 0;
@@ -587,6 +628,17 @@ nav a:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .hero .hero_content p {
+    font-size: 6vw;
+    letter-spacing: 0;
+    color: #d6d0c4;
+    text-transform: capitalize;
+    line-height: 1;
+    font-family: "Dosis", sans-serif;
+  }
+}
+
 .hero .hero_content .buttons {
   margin-top: 2em;
 }
@@ -614,6 +666,12 @@ nav a:hover {
           filter: brightness(90%);
 }
 
+@media screen and (max-width: 600px) {
+  .hero .hero_content .buttons .btn-primary {
+    font-size: 0.9em;
+  }
+}
+
 .hero .hero_content .buttons .btn-secondary {
   background-color: #fcb040;
   border: 2px solid #fcb040;
@@ -639,6 +697,7 @@ nav a:hover {
     color: #ffffff;
     margin-left: 0;
     margin-top: 0.5em;
+    font-size: 0.9em;
   }
 }
 

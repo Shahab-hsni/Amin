@@ -26,7 +26,7 @@
                 </ul>
             </nav>
             <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
+                <span class="white-hamburger"></span>
             </label>
         </header>
 
@@ -361,9 +361,14 @@
         function scrollFunction() {
             const navbar = document.querySelector('header');
             const navLinks = document.querySelectorAll('nav li a');
+            const hamburger = document.querySelector(".nav-toggle-label span");
+
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 document.querySelector(".mobile-view").style.transform = "translate(0px, 0px)";
                 document.querySelector(".mobile-view").style.transform += 'scale(1)';
+                hamburger.classList.remove("white-hamburger");
+                hamburger.classList.add("black-hamburger");
+
                 navbar.style.backgroundColor = '#ffffff';
                 navbar.style.boxShadow = "0px 1px 10px #00000014";
                 navLinks.forEach(navlink => {
@@ -375,6 +380,8 @@
                 document.querySelector(".mobile-view").style.transform = "translate(10vw, 15vh)";
                 document.querySelector(".mobile-view").style.transform += 'scale(3.5)';
                 navbar.style.backgroundColor = 'transparent';
+                hamburger.classList.add("white-hamburger");
+                hamburger.classList.remove("black-hamburger");
                 navbar.style.boxShadow = "0px 0px 0px #00000014";
                 navLinks.forEach(navlink => {
                     navlink.style.color = "#d6d0c4";
