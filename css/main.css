@@ -614,16 +614,17 @@ nav a:hover {
 }
 
 .hero .hero_content .buttons .btn-secondary {
-  background-color: transparent;
-  border: 2px solid #eb3f3f;
+  background-color: #fcb040;
+  border: 2px solid #fcb040;
   margin-left: 0.8em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: #ffffff;
 }
 
 .hero .hero_content .buttons .btn-secondary:hover {
-  background-color: #eb3f3f;
-  color: #ffffff;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 @media screen and (max-width: 768px) {
