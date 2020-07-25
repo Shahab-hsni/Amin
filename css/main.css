@@ -651,6 +651,7 @@ nav a:hover {
   text-align: center;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hero .hero_content .buttons .btn-primary {
