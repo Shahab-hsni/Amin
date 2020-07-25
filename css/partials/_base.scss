@@ -390,13 +390,15 @@ nav a:hover {
       }
 
       .btn-secondary {
-        background-color: $secondary;
-        border: 2px solid $secondary;
+        background-color: $white;
+        border: 2px solid $accent;
         margin-left: 0.8em;
         transition: all 0.3s ease;
-        color: $white;
+        color: $black;
         &:hover {
           filter: brightness(90%);
+          background-color: $accent;
+          color: $white;
         }
         @media screen and (max-width: 768px) {
           color: $light_p;
