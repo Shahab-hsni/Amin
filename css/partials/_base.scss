@@ -1025,7 +1025,9 @@ section.contact {
       background-color: transparent;
       border-radius: 13px;
       margin: auto;
-      box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.1);
       &__field {
         display: grid;
         gap: 24px;
