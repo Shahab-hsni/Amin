@@ -781,7 +781,10 @@ main {
         border-radius: 10px;
         position: relative;
         z-index: 99;
-        box-shadow: 3px 15px 20px rgba(0, 0, 0, 0.1);
+        -webkit-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.1);
+        background-color: $white;
         // 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         img {
           margin: auto;
