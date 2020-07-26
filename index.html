@@ -212,7 +212,7 @@
 
             <h1 class="title gallery-title">Gallery</h1>
             <div class="g-items">
-                <div class="g-item g1">
+                <div class="g-item g1" id="burger">
                     <img src="/assets/gallery images/Earth1-01.jpg" alt="">
                 </div>
                 <div class="g-item g2">
@@ -315,6 +315,14 @@
 
             </div>
 
+            <div class="img-popup">
+                <img src="" alt="Popup Image">
+                <div class="close-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
         </section>
         <section class="contact">
             <h1 class="title">Contact Me</h1>
@@ -399,13 +407,42 @@
         </div>
 
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+
     <script
         src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/js/rellax.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // required elements
+            var imgPopup = $('.img-popup');
+            var imgCont = $('.g-item');
+            var popupImage = $('.img-popup img');
+            var closeBtn = $('.close-btn');
+
+            // handle events
+            imgCont.on('click', function () {
+                var img_src = $(this).children('img').attr('src');
+                imgPopup.children('img').attr('src', img_src);
+                imgPopup.addClass('opened');
+            });
+
+            $(imgPopup, closeBtn).on('click', function () {
+                imgPopup.removeClass('opened');
+                imgPopup.children('img').attr('src', '');
+            });
+
+            popupImage.on('click', function (e) {
+                e.stopPropagation();
+            });
+
+        });
+    </script>
     <script>
 
         const scroll = new SmoothScroll('.nav-links a[href*="#"]', {
