@@ -30,7 +30,7 @@ header {
     width: 30px;
     height: 60px;
     margin-left: 2em;
-    transform: translate(10vw, 15vh) scale(3.3);
+    transform: translate(10vw, 18vh) scale(3.8, 4.5);
     transition: all 0.3s ease-out;
     @media screen and (max-width: 768px) {
       transform: translate(0px, 0px) scale(1, 1);
@@ -330,7 +330,7 @@ nav a:hover {
   }
   .hero_content {
     grid-column: 2/3;
-    margin-top: -3em;
+    margin-top: 5em;
     position: relative;
     z-index: 3;
     @media screen and (max-width: 992px) {
