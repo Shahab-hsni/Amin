@@ -13,8 +13,8 @@
     <div class="hero-container">
         <header>
             <div class="logo">
-                <img src="/assets/Logo-MeSite-4 5.png" alt="" class="mobile-view">
-                <img src="/assets/Logo-MeSite-4 5.png" alt="" class="desktop-view">
+                <img src="/assets/Logo-alidoosti.png" alt="" class="mobile-view">
+                <img src="/assets/Logo-alidoosti.png" alt="" class="desktop-view">
             </div>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
@@ -83,7 +83,7 @@
                 <div class="about-blob ">
 
 
-                    <img src="/assets/astronaut (4) 1 (1).png" alt="" class="astronat ">
+                    <img src="/assets/astronaut.png" alt="" class="astronat ">
                 </div>
 
                 <div class="about-content">
@@ -140,6 +140,8 @@
             </div>
         </section>
         <section id="testim" class="testim">
+            <img src="/assets/testomon.png" alt="" class="astro">
+            <img src="/assets/sideblob.png" alt="" class="sideBlob">
             <div class="wrap">
 
                 <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
@@ -219,7 +221,7 @@
                     <img src="/assets/gallery images/Wave-Body3.jpg" alt="">
                 </div>
                 <div class="g-item g3">
-                    <img src="/assets/gallery images/IceCat.jpg" alt="">
+                    <img src="/assets/gallery images/IceCatPs2-02 (1).PNG" alt="">
                 </div>
                 <div class="g-item g4">
                     <img src="/assets/gallery images/IPhoneCoverFinal.jpg" alt="">
@@ -540,6 +542,14 @@
 
         }
 
+        let tt = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.testim',
+                start: "center bottom"
+            }
+        });
+        tt.from(".sideBlob", { x: -50, duration: 0.9, rotate: -40, scale: 0 })
+            .from(".astro", { y: -100, duration: 1.4, opacity: 0, ease: "expo.out" }, "-=0.5")
 
 
 
