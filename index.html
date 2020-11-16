@@ -9,77 +9,78 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="hero-container">
-        <header>
-            <div class="logo">
-                <img src="/assets/Logo-alidoosti.png" alt="" class="mobile-view">
-                <img src="/assets/Logo-alidoosti.png" alt="" class="desktop-view">
-            </div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span class="white-hamburger"></span>
-            </label>
-        </header>
-
-        <div class="hero">
-
-            <svg viewBox="0 0 215 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M92.4015 0H0V110H215V109.648C214.777 109.651 214.547 109.653 214.31 109.653C200.298 109.653 191.455 104.391 183.446 98.7819C178.173 95.0895 174.41 97.3404 170.407 99.7346C166.809 101.886 163.018 104.154 157.765 102.327C153.098 100.704 151.406 98.6631 149.66 96.556C147.252 93.6515 144.74 90.6208 134.188 88.3838C115.979 84.5239 110.993 71.4475 117.086 60.9706C119.984 55.9885 116.511 56.7957 111.454 57.9709C105.877 59.267 98.3746 61.0107 95.3688 55.9291C92.7836 51.5584 95.204 48.422 97.7545 45.117C100.858 41.0954 104.154 36.8244 98.858 29.7764C91.1392 19.5043 91.3375 5.64543 92.4015 0Z"
-                    fill="#ffffff" />
-            </svg>
-
-
-            <div class="hero_content">
-                <h1>Amin Alidoosti</h1>
-                <p>Graphic designer</p>
-                <ul class="buttons">
-
-                    <a href="#portfolio" class="btn btn-primary">Hire Me</a>
-
-
-                    <a href="#portfolio" class="btn btn-secondary">My Work</a>
-
-
-
-
-
-                </ul>
-            </div>
-            <div class="hero_objects">
-                <img src="/assets/Jupiter1.png" alt="" class="jupiter rellax" data-rellax-speed="-4"
-                    data-rellax-percentage="0.5">
-                <img src="/assets/Cloud.png" alt="" class="cloud">
-                <img src="/assets/Moon-1.png" alt="" class="moon1">
-                <img src="/assets/Moon-2.png" alt="" class="moon2">
-                <img src="/assets/Satelite.png" alt="" class="satelite rellax" data-rellax-speed="4">
-            </div>
-
+<body data-scroll-container>
+    <header data-scroll-sticky>
+        <div class="logo">
+            <img src="/assets/Logo-alidoosti.png" alt="" class="mobile-view">
+            <img src="/assets/Logo-alidoosti.png" alt="" class="desktop-view">
         </div>
-        <div class="nav-links">
-            <a href="#about">
-                <div class="pointer">
-                    <img src="/assets/Spaceship.png" alt="" id="spaceship">
-                    <img src="/assets/Fire (1).png" alt="" id="fire">
-                </div>
-            </a>
-        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul class="nav">
+                <li data-scroll><a href="#hero" data-scroll-to>Home</a></li>
+                <li data-scroll><a href="#about" data-scroll-to>About</a></li>
+                <li data-scroll><a href="#services" data-scroll-to>Services</a></li>
 
 
-    </div>
+                <li data-scroll><a href="#portfolio" data-scroll-to>Portfolio</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span class="white-hamburger"></span>
+        </label>
+    </header>
     <main>
-        <section class="about " id="about">
-            <h1 class="title about-title">About me</h1>
-            <div class="about-row">
+        <div class="hero-container" data-scroll-section>
+
+            <div class="hero" id="hero">
+
+                <svg viewBox="0 0 215 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M92.4015 0H0V110H215V109.648C214.777 109.651 214.547 109.653 214.31 109.653C200.298 109.653 191.455 104.391 183.446 98.7819C178.173 95.0895 174.41 97.3404 170.407 99.7346C166.809 101.886 163.018 104.154 157.765 102.327C153.098 100.704 151.406 98.6631 149.66 96.556C147.252 93.6515 144.74 90.6208 134.188 88.3838C115.979 84.5239 110.993 71.4475 117.086 60.9706C119.984 55.9885 116.511 56.7957 111.454 57.9709C105.877 59.267 98.3746 61.0107 95.3688 55.9291C92.7836 51.5584 95.204 48.422 97.7545 45.117C100.858 41.0954 104.154 36.8244 98.858 29.7764C91.1392 19.5043 91.3375 5.64543 92.4015 0Z"
+                        fill="#ffffff" />
+                </svg>
+
+
+                <div class="hero_content">
+                    <h1>Amin Alidoosti</h1>
+                    <p>Graphic designer</p>
+                    <ul class="buttons">
+
+                        <a href="#portfolio" class="btn btn-primary">Hire Me</a>
+
+
+                        <a href="#portfolio" class="btn btn-secondary">My Work</a>
+
+
+
+
+
+                    </ul>
+                </div>
+                <div class="hero_objects">
+                    <img src="/assets/Jupiter1.png" alt="" class="jupiter">
+                    <img src="/assets/Cloud.png" alt="" class="cloud">
+                    <img src="/assets/Moon-1.png" alt="" class="moon1">
+                    <img src="/assets/Moon-2.png" alt="" class="moon2">
+                    <img src="/assets/Satelite.png" alt="" class="satelite ">
+                </div>
+
+            </div>
+            <div class="nav-links" data-scroll>
+                <a href="#about" data-scroll-to="">
+                    <div class="pointer" id="rec">
+                        <img src="/assets/Spaceship.png" alt="" id="spaceship">
+                        <img src="/assets/Fire (1).png" alt="" id="fire">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <section class="about" id="about" data-scroll-section>
+
+            <h1 class="title about-title  ">About me</h1>
+            <div class="about-row" data-scroll data-scroll-speed="3">
                 <div class="about-blob ">
 
 
@@ -90,13 +91,17 @@
 
                     <div class="about-content-inner">
 
-                        <p>I am a graphic designer and video editor with five years experience in the field and growing.
+                        <p>I am a graphic designer and video editor with five years experience in the field and
+                            growing.
 
-                            I have a diploma in animation and multimedia design and I have worked with international
-                            companies to help them with rebranding and creating graphic and visual content for various
+                            I have a diploma in animation and multimedia design and I have worked with
+                            international
+                            companies to help them with rebranding and creating graphic and visual content for
+                            various
                             platforms from print to online.</p>
 
-                        <p>I am driven by my passion for my work and fully commited to the task to get it done!</p>
+                        <p>I am driven by my passion for my work and fully commited to the task to get it done!
+                        </p>
 
 
                     </div>
@@ -104,11 +109,11 @@
             </div>
 
         </section>
-        <section class="services" id="services">
+        <section class="services" id="services" data-scroll-section>
 
-            <h1 class="title"><span>What I Do</span> </h1>
+            <h1 class="title" data-scroll data-scroll-speed="2"><span>What I Do</span> </h1>
             <div class="cards">
-                <div class="card c1">
+                <div class="card c1" data-scroll data-scroll-speed="3">
                     <img src="/assets/UIUX.svg" alt="">
                     <div class="card-body">
                         <h3 class="card-title">UI & UX</h3>
@@ -118,7 +123,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card c2">
+                <div class="card c2" data-scroll data-scroll-speed="2">
                     <img src="/assets/design 2.png" alt="">
                     <div class="card-body">
                         <h3 class="card-title">Graphic Design</h3>
@@ -127,7 +132,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card c3">
+                <div class="card c3" data-scroll data-scroll-speed="1">
                     <img src="/assets/Vdo.svg" alt="">
                     <div class="card-body">
                         <h3 class="card-title">Videography</h3>
@@ -139,180 +144,61 @@
                 </div>
             </div>
         </section>
-        <section id="testim" class="testim">
-            <img src="/assets/testomon.png" alt="" class="astro">
-            <img src="/assets/sideblob.png" alt="" class="sideBlob">
-            <div class="wrap">
-
-                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-                <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-                <ul id="testim-dots" class="dots">
-                    <li class="dot active"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                    <!--
-                    -->
-                    <li class="dot"></li>
-                </ul>
-                <div id="testim-content" class="cont">
-
-                    <div class="active">
-                        <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg"
-                                alt=""></div>
-                        <h2>Lorem P. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
-                        <h2>Mr. Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://image.ibb.co/iN3qES/pexels_photo_324658.jpg" alt=""></div>
-                        <h2>Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt="">
-                        </div>
-                        <h2>Lorem De Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                        </p>
-                    </div>
-
-                    <div>
-                        <div class="img"><img src="https://image.ibb.co/gUPag7/image.jpg" alt=""></div>
-                        <h2>Ms. Lorem R. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <section class="gallery" id="portfolio">
+        <section class="gallery" id="portfolio" data-scroll-section>
 
             <h1 class="title gallery-title">Gallery</h1>
             <div class="g-items">
-                <div class="g-item g1" id="burger">
+                <div class="g-item g1" id="burger" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/Earth1-01.jpg" alt="">
                 </div>
-                <div class="g-item g2">
+                <div class="g-item g2" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/Wave-Body3.jpg" alt="">
                 </div>
-                <div class="g-item g3">
+                <div class="g-item g3" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/IceCatPs2-02 (1).PNG" alt="">
                 </div>
-                <div class="g-item g4">
+                <div class="g-item g4" data-scroll data-scroll-speed="1">
                     <img src="/assets/gallery images/IPhoneCoverFinal.jpg" alt="">
                 </div>
-                <div class="g-item g5">
+                <div class="g-item g5" data-scroll data-scroll-speed="1">
                     <img src="/assets/gallery images/Jupiter (1).jpg" alt="">
                 </div>
-                <div class="g-item g6">
+                <div class="g-item g6" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/PolyThomComplete.jpg" alt="">
                 </div>
-                <div class="g-item g7">
+                <div class="g-item g7" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/Sheild.jpg" alt="">
                 </div>
-                <div class="g-item g8">
+                <div class="g-item g8" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/PolyMoon.jpg" alt="">
                 </div>
-                <div class="g-item g9">
+                <div class="g-item g9" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/ShahabFSign-01.jpg" alt="">
                 </div>
-                <div class="g-item g10">
+                <div class="g-item g10" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/PoolGrad.jpg" alt="">
                 </div>
-                <div class="g-item g11">
+                <div class="g-item g11" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/SolarSystem.jpg" alt="">
                 </div>
-                <div class="g-item g12">
+                <div class="g-item g12" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/Bird1.jpg" alt="">
                 </div>
-                <div class="g-item g13">
+                <div class="g-item g13" data-scroll data-scroll-speed="1">
                     <img src="/assets/gallery images/Mahyarr.jpg" alt="">
                 </div>
-                <div class="g-item g14">
+                <div class="g-item g14" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/Foxy.jpg" alt="">
                 </div>
-                <div class="g-item g17">
+                <div class="g-item g17" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/MeSiteFSign.jpg" alt="">
                 </div>
-                <div class="g-item g18">
+                <div class="g-item g18" data-scroll data-scroll-speed="1">
                     <img src="/assets/gallery images/BlankKeyboard.jpg" alt="">
                 </div>
-                <div class="g-item g19">
+                <div class="g-item g19" data-scroll data-scroll-speed="2">
                     <img src="/assets/gallery images/Aiya.jpg" alt="">
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             </div>
@@ -326,7 +212,7 @@
             </div>
 
         </section>
-        <section class="contact">
+        <section class="contact" id="contact" data-scroll-section>
             <h1 class="title">Contact Me</h1>
             <div class="contact-main">
                 <form class="form" name="contact" method="POST" data-netlify="true">
@@ -362,46 +248,45 @@
 
                 </div>
                 <!-- <div class="my-info">
-                    <div class="address">
-                        <div class="location">
-                            <i data-feather="map-pin"></i>
-                            <h3>Address</h3>
-                        </div>
-                        <div class="phone">
-                            <i data-feather="phone"></i>
-                            <h3>Phone</h3>
-                        </div>
-                        <div class="email">
-                            <i data-feather="mail"></i>
-                            <h3>Address</h3>
-                        </div>
-    
-                    </div>
-                    <div class="social-media">
-                        <div class="git">
-                            <i data-feather="github"></i>
-                        </div>
-                        <div class="instagram">
-                            <i data-feather="instagram"></i>
-                        </div>
-                        <div class="linkedin">
-                            <i data-feather="linkedin"></i>
-                        </div>
-                        <div class="twitter">
-                            <i data-feather="twitter"></i>
-                        </div>
-    
-    
-    
-    
-                    </div>
-                </div> -->
+                            <div class="address">
+                                <div class="location">
+                                    <i data-feather="map-pin"></i>
+                                    <h3>Address</h3>
+                                </div>
+                                <div class="phone">
+                                    <i data-feather="phone"></i>
+                                    <h3>Phone</h3>
+                                </div>
+                                <div class="email">
+                                    <i data-feather="mail"></i>
+                                    <h3>Address</h3>
+                                </div>
+            
+                            </div>
+                            <div class="social-media">
+                                <div class="git">
+                                    <i data-feather="github"></i>
+                                </div>
+                                <div class="instagram">
+                                    <i data-feather="instagram"></i>
+                                </div>
+                                <div class="linkedin">
+                                    <i data-feather="linkedin"></i>
+                                </div>
+                                <div class="twitter">
+                                    <i data-feather="twitter"></i>
+                                </div>
+            
+            
+            
+            
+                            </div>
+                        </div> -->
             </div>
             <img src="/assets/Antena.png" alt="" class="antena">
             <img src="/assets/Base.png" alt="" class="base">
         </section>
     </main>
-
     <div class="loader-wrapper">
         <div class="inner-holder">
             <img src="/assets/Spaceship.png" alt="" class="loader1">
@@ -409,271 +294,13 @@
         </div>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
-
-    <script
-        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="/js/rellax.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            // required elements
-            var imgPopup = $('.img-popup');
-            var imgCont = $('.g-item');
-            var popupImage = $('.img-popup img');
-            var closeBtn = $('.close-btn');
-
-            // handle events
-            imgCont.on('click', function () {
-                var img_src = $(this).children('img').attr('src');
-                imgPopup.children('img').attr('src', img_src);
-                imgPopup.addClass('opened');
-            });
-
-            $(imgPopup, closeBtn).on('click', function () {
-                imgPopup.removeClass('opened');
-                imgPopup.children('img').attr('src', '');
-            });
-
-            popupImage.on('click', function (e) {
-                e.stopPropagation();
-            });
-
-        });
-    </script>
-    <script>
-
-        const scroll = new SmoothScroll('.nav-links a[href*="#"]', {
-            speed: 1300,
-            speedAsDuration: true,
-            offset: 100,
-            easing: 'easeInQuad'
-        });
-        const scrollNav = new SmoothScroll('ul a[href*="#"]', {
-            speed: 900,
-            speedAsDuration: true,
-            offset: 100,
-            easing: 'easeInQuad'
-        });
-
-    </script>
-    <script>
-        var rellax = new Rellax('.rellax');
-    </script>
-    <script>
-        feather.replace()
-    </script>
-    <script>
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            const navbar = document.querySelector('header');
-            const navLinks = document.querySelectorAll('nav li a');
-            const hamburger = document.querySelector(".nav-toggle-label span");
-
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.querySelector(".mobile-view").style.transform = "translate(0px, 0px)";
-                document.querySelector(".mobile-view").style.transform += 'scale(1)';
-                hamburger.classList.remove("white-hamburger");
-                hamburger.classList.add("black-hamburger");
-
-                navbar.style.backgroundColor = '#ffffff';
-                navbar.style.boxShadow = "0px 1px 10px #00000014";
-                navLinks.forEach(navlink => {
-                    navlink.style.color = "black";
-                })
-
-
-            } else {
-                document.querySelector(".mobile-view").style.transform = "translate(10vw, 18vh)";
-                document.querySelector(".mobile-view").style.transform += 'scale(4, 4.5)';
-                navbar.style.backgroundColor = 'transparent';
-                hamburger.classList.add("white-hamburger");
-                hamburger.classList.remove("black-hamburger");
-                navbar.style.boxShadow = "0px 0px 0px #00000014";
-                navLinks.forEach(navlink => {
-                    navlink.style.color = "#d6d0c4";
-                })
-            }
-        }
-    </script>
-    <script>
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.about',
-                start: "center bottom"
-            }
-        });
-        tl.from(".astronat", { y: 200, opacity: 0, duration: 1.5 })
-            .from(".about-content p", { x: 100, opacity: 0, duration: 1 }, "-=1")
-
-
-        let tj = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.services',
-                start: "center bottom"
-            }
-        });
-        tj.from(".c1", { y: 100, opacity: 0, duration: 0.8 })
-            .from(".c2", { y: 100, opacity: 0, duration: 0.8 }, "-=0.5")
-            .from(".c3", { y: 100, opacity: 0, duration: 0.8 }, "-=0.5")
-
-        TweenMax.from('.jupiter', { y: 400, opacity: 0, duration: 2 });
-        TweenMax.from('.satelite', { y: 200, x: 200, opacity: 0, duration: 2 });
-        TweenMax.from('.moon1', { y: 200, opacity: 0, ease: Back.easeOut.config(1.7), duration: 2 });
-
-        let images = document.querySelectorAll('.g-items .g-item')
-        console.log(images[0])
-        for (var i = 0; i < images.length; i++) {
-            let duration = 1
-            let tf = gsap.timeline({
-                scrollTrigger: {
-                    trigger: images[i],
-                    start: "top bottom"
-                }
-            });
-            tf.from(images[i], 0.3, { scale: 0.5, y: 100, opacity: 0, duration: duration }, "+=0.5");
-            duration += 0.5
-
-
-        }
-
-        let tt = gsap.timeline({
-            scrollTrigger: {
-                trigger: '.testim',
-                start: "center bottom"
-            }
-        });
-        tt.from(".sideBlob", { x: -50, duration: 0.9, rotate: -40, scale: 0 })
-            .from(".astro", { y: -100, duration: 1.4, opacity: 0, ease: "expo.out" }, "-=0.5")
-
-
-
-
-    </script>
-    <script>
-        $(window).on("load", function () {
-            $(".loader-wrapper").slideUp(800, function () {
-                $("body").css("overflow", "visible")
-            });
-
-        })
-    </script>
-    <script>
-        // vars
-        'use strict'
-        var testim = document.getElementById("testim"),
-            testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
-            testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
-            testimLeftArrow = document.getElementById("left-arrow"),
-            testimRightArrow = document.getElementById("right-arrow"),
-            testimSpeed = 4500,
-            currentSlide = 0,
-            currentActive = 0,
-            testimTimer,
-            touchStartPos,
-            touchEndPos,
-            touchPosDiff,
-            ignoreTouch = 30;
-        ;
-
-        window.onload = function () {
-
-            // Testim Script
-            function playSlide(slide) {
-                for (var k = 0; k < testimDots.length; k++) {
-                    testimContent[k].classList.remove("active");
-                    testimContent[k].classList.remove("inactive");
-                    testimDots[k].classList.remove("active");
-                }
-
-                if (slide < 0) {
-                    slide = currentSlide = testimContent.length - 1;
-                }
-
-                if (slide > testimContent.length - 1) {
-                    slide = currentSlide = 0;
-                }
-
-                if (currentActive != currentSlide) {
-                    testimContent[currentActive].classList.add("inactive");
-                }
-                testimContent[slide].classList.add("active");
-                testimDots[slide].classList.add("active");
-
-                currentActive = currentSlide;
-
-                clearTimeout(testimTimer);
-                testimTimer = setTimeout(function () {
-                    playSlide(currentSlide += 1);
-                }, testimSpeed)
-            }
-
-            testimLeftArrow.addEventListener("click", function () {
-                playSlide(currentSlide -= 1);
-            })
-
-            testimRightArrow.addEventListener("click", function () {
-                playSlide(currentSlide += 1);
-            })
-
-            for (var l = 0; l < testimDots.length; l++) {
-                testimDots[l].addEventListener("click", function () {
-                    playSlide(currentSlide = testimDots.indexOf(this));
-                })
-            }
-
-            playSlide(currentSlide);
-
-            // keyboard shortcuts
-            document.addEventListener("keyup", function (e) {
-                switch (e.keyCode) {
-                    case 37:
-                        testimLeftArrow.click();
-                        break;
-
-                    case 39:
-                        testimRightArrow.click();
-                        break;
-
-                    case 39:
-                        testimRightArrow.click();
-                        break;
-
-                    default:
-                        break;
-                }
-            })
-
-            testim.addEventListener("touchstart", function (e) {
-                touchStartPos = e.changedTouches[0].clientX;
-            })
-
-            testim.addEventListener("touchend", function (e) {
-                touchEndPos = e.changedTouches[0].clientX;
-
-                touchPosDiff = touchStartPos - touchEndPos;
-
-                console.log(touchPosDiff);
-                console.log(touchStartPos);
-                console.log(touchEndPos);
-
-
-                if (touchPosDiff > 0 + ignoreTouch) {
-                    testimLeftArrow.click();
-                } else if (touchPosDiff < 0 - ignoreTouch) {
-                    testimRightArrow.click();
-                } else {
-                    return;
-                }
-
-            })
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.6.1/dist/locomotive-scroll.min.js"></script>
+    <script src="/js/custom.js"></script>
 </body>
 
 </html>

@@ -372,6 +372,7 @@ nav a:hover {
   background-image: url("/assets/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .hero-container .pointer {
@@ -1246,11 +1247,6 @@ main section.services .cards .card .card-body p {
   margin-top: 1em;
 }
 
-main section.services .cards .c2 {
-  -webkit-transform: scale(1.1) !important;
-          transform: scale(1.1) !important;
-}
-
 @media screen and (max-width: 768px) {
   main section.services .cards .c2 {
     -webkit-transform: scale(1) !important;
@@ -1334,8 +1330,7 @@ main section.gallery .g-items {
 main section.gallery .g-items .g-item {
   position: relative;
   overflow: hidden;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  opacity: 1;
 }
 
 main section.gallery .g-items .g-item::after {
@@ -1361,8 +1356,6 @@ main section.gallery .g-items .g-item img {
       align-self: stretch;
   -webkit-box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ffffff;
           box-shadow: inset 20px 20px 60px #d5d5d5, inset -20px -20px 60px #ffffff;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 main section.gallery .g-items .g-item:hover img {
@@ -2309,5 +2302,70 @@ img.antena {
   left: -20%;
   top: -30%;
   max-width: 40vw;
+}
+
+/* smooth scroll */
+/*! locomotive-scroll v3.6.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  opacity: 0;
+}
+
+.c-scrollbar:hover {
+  -webkit-transform: scaleX(1.45);
+          transform: scaleX(1.45);
+}
+
+.c-scrollbar:hover,
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #a7a7a7;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 /*# sourceMappingURL=main.css.map */
